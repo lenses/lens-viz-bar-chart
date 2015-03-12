@@ -1,7 +1,7 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../th-d3-chart/th-d3-chart.html">
 
-<polymer-element name="th-n-bar-chart" extends="th-d3-chart" attributes="input showHorizontalAxis wrapLabels">
+<polymer-element name="lens-viz-bar-chart" extends="th-d3-chart" attributes="input showHorizontalAxis wrapLabels">
 
   <template>
       <core-style ref="theme"></core-style>
@@ -203,7 +203,7 @@
 
     // POLYMER OBJECT DEF.
 
-    Polymer('th-n-bar-chart', {
+    Polymer('lens-viz-bar-chart', {
       chartData: [
         {label: 'Player', value: 15, display_value: '$15',  color:''},
         {label: 'Vendor', value: 20, display_value: '$20',  color:''},
@@ -654,7 +654,7 @@
 
           getMetaData: function() {
                 return {
-                  "name": "th-n-bar-chart",
+                  "name": "lens-viz-bar-chart",
                   "description": "Thelma n bar chart",
                   "category":"chart",
                   "version": "0.0.1",
